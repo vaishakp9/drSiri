@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1">
+	<category>
+		<pattern>HELLO</pattern>
+		<template>
+			<random>
+				<li>Hi, human !</li>
+				<li>Hello there !</li>
+				<li>Hi! How may I help you ?</li>
+			</random>
+		</template>
+	</category>
+
+<category><pattern>HI</pattern><template><srai>HELLO</srai></template></category> 
+ 
+
+<category><pattern>FEVER</pattern><template><random><li>With your doctor's consent, take a Crocin.</li><li>Sleep well !</li></random></template></category> 
+<category><pattern>COUGH</pattern><template><random><li>Take a tbsp of cough syrup</li><li>Drink hot fluids</li></random></template></category> 
+<category><pattern>CHEST PAIN</pattern><template><random><li>Please drink some water immediately</li><li>If the pain persists, get to the hospital right away.</li></random></template></category> 
+<category><pattern>FATIGUE</pattern><template><random><li>Slow down, take some rest.</li><li>Drink lots of water, glucose drinks, etc.,</li><li>Grab a healthy snack</li></random></template></category> 
+<category><pattern>VOMITING</pattern><template><random><li>Drink fluids !</li><li>Have pickles.</li></random></template></category> 
+<category><pattern>HEADACHE</pattern><template><random><li>Please get off your smartphone first !</li><li>Pop a Saridon capsule.</li></random></template></category> 	
+<category><pattern>SORE THROAT</pattern><template><random><li>Take a throat lozenge right away.</li><li>Drink lots of hot water.</li><li>Gargle with salt water</li></random></template></category> 
+<category><pattern>INDIGESTION</pattern><template><random><li>Take some Eno.</li></random></template></category> 
+
+
+
+	<category>
+		<pattern>FFX TERRIBLE COLD</pattern>
+		<template>
+			<random>
+				<li>Drink some hot chocolate.</li>
+				<li>Please consult a doctor.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>FFX COUGH FATIGUE</pattern>
+		<template>
+			<random>
+				<li>There's a chance that you may be suffering from acute pneumonia. Please visit doctor ASAP.</li>
+				<li>Please consult a doctor.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>FFX HEADACHE VOMITING</pattern>
+		<template>
+			<random>
+				<li>Severe Migraine</li>
+
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>FFX COUGH HEADACHE</pattern>
+		<template>
+			<random>
+				<li>You might be infected with Chikun Gunya</li>
+				<li>You might be infected with Zika</li>
+			</random>
+		</template>
+	</category>
+
+<category>
+		<pattern>FFX COUGH VOMITING</pattern>
+		<template>
+			<random>
+				<li>You might be infected with Pertussis.</li>
+			</random>
+		</template>
+	</category>
+
+<category><pattern>FFX VOMITING COUGH</pattern><template><srai>FFX COUGH VOMITING</srai></template></category> 
+<category><pattern>FFX HEADACHE COUGH</pattern><template><srai>FFX COUGH HEADACHE</srai></template></category> 
+<category><pattern>FFX VOMITING HEADACHE</pattern><template><srai>FFX HEADACHE VOMITING</srai></template></category> 
+<category><pattern>FFX FATIGUE COUGH</pattern><template><srai>FFX COUGH FATIGUE</srai></template></category> 
+
+	<category>
+		<pattern>BYE</pattern>
+		<template>
+			<random>
+				<li>Get well soon.</li>
+				<li>Good bye. Take care of yourself</li>
+			</random>
+		</template>
+	</category>
+
+	<category><pattern>*</pattern><template>We could not understand your request. Please try again</template></category>
+	
+</aiml>
