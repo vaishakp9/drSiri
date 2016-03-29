@@ -48,6 +48,17 @@ def weights():
 	#print(txt)
 	print (str(number))
 	return (str(number))
+@app.route('/keyword_extract', methods=['POST'])
+def keyword_extract():
+	request.headers
+	text = request.headers.get("text")
+	text = str(text)
+	url = "https://api.repustate.com/v3/dc88b08e3079785fd126e94a3633fbe817e8d07b/entities.json"
+	#payload = {"text": "I've got AIDS"}
+	r = requests.post(url, data={'text':text})
+	json_data = r.json()
+	json_data = json.dumps(json_data)
+	return str(json_data)
 @app.route('/post_analyze',methods=['POST'])
 def post_analyze():
 	request.headers
@@ -107,5 +118,5 @@ def post_analyze():
 		r2 = requests.get(url2)
 		return r2.text
 if __name__ =='__main__' :
-	app.run(host="0.0.0.0",port=1991)
+	app.run(host="0.0.0.0",port=1993)
 
